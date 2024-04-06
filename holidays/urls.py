@@ -2,6 +2,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.holidays, name="holidays"),
-    path('holiday-result/', views.holidays_result, name="holiday-result")
+    path('', views.holi_finder, name='holi-finder'),
+    path('holidays_result/', views.holidays_result, name='holidays_result'),
 ]
