@@ -1,6 +1,6 @@
 from django import forms
 
-class HolidayForms(forms.Form):
+class HolidayForm(forms.Form):
     COUNTRY_CHOICES = [
         ('AF', 'Afghanistan'),
         ('AL', 'Albania'),
