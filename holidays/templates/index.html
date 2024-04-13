@@ -9,6 +9,9 @@
 </head>
 <body>
 <h1>Welcome to Holidays Finder</h1>
+{% if final_resp %}
+<p class="final-resp"><strong>{{ final_resp }}</strong></p>
+{% endif %}
     {% block sidebar %}
         <ul class="mi">
             <form method="POST">
