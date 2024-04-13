@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="{% static 'css_file.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'my_css.css' %}">
     <title>Holidays Finder</title>
 </head>
 <body>
@@ -12,10 +13,25 @@
         <ul class="mi">
             <form method="POST">
             {% csrf_token %}
-            {{ forms.as_p }}
+                <div class="form-group">
+			<label for="day"><strong>Day:</strong></label>
+                    {{ forms.Day }}
+                </div>
+                <div class="form-group">
+                    <label for="month"><strong>Month:</strong></label>
+                    {{ forms.Month }}
+                </div>
+                <div class="form-group">
+                    <label for="year"><strong>Year:</strong></label>
+                    {{ forms.Year }}
+                </div>
+                <div class="form-group">
+                    <label for="country"><strong>Country:</strong></label>
+                    {{ forms.Country }}
+                </div>
                 <button>Check it now!</button>
              </form>
-          </ul>
+	</ul>
     {% endblock %}
 </body>
 </html>
