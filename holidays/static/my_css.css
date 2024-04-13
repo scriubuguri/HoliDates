@@ -44,3 +44,20 @@ h1 {
     text-align: center;
     color: #000080;
 }
+
+.final-resp {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: grey;
+    border-radius: 5px;
+    text-align: center;
+    color:#FFFF00;
+    font-size:20px;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width:600px;
+    height:20px;
+
+}
