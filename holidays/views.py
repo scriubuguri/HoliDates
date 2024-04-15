@@ -35,12 +35,19 @@ def holidays_result(request):
     response = requests.get(full_url)
     api_response = response.json()
     the_holiday = api_response[0]['name']
+    country_choices = dict(HolidayForm.COUNTRY_CHOICES)
+
+    your_country = request.session['your_data']['Country']
+
+    your_country_full_name = country_choices.get(your_country)
+
     final_resp = "Today, {day}.{month}.{year}, is the {holiday} holiday in {country}.".format(
             day=your_day,
             month=your_month,
             year=your_year,
             holiday=the_holiday,
-            country=your_country
+            country=your_country_full_name
             )
+
     forms = HolidayForm()
     return render(request, 'index.html', {'final_resp': final_resp, 'forms': forms})
