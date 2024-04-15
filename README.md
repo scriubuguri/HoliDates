@@ -1,11 +1,11 @@
-##HoliDates
+## HoliDates
 
 API Holidays provides information about holidays worldwide. With this API, users can access data on public holidays, observances, and special events across various countries and regions.
 
 ![](holifinder.png)
 
 
-##Usage
+## Usage
 
 1. Clone this repository to your local machine:
 
@@ -31,7 +31,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-5. visit [Abstract API](https://app.abstractapi.com/dashboard) and follow the steps to register and obtain an API key. After you have obtained the API key, configure the `your_api_key` variable in the `views.py` file with your key.
+5. Visit [Abstract API](https://app.abstractapi.com/dashboard) and follow the steps to register and obtain an API key. After you have obtained the API key, configure the `your_api_key` variable in the `views.py` file with your key.
 
 6. Before run the app, open the `HoliDates` folder (where you have the `manage.py` file) and apply the migrations:
 
