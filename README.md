@@ -1,6 +1,6 @@
-## HoliDates
+## Holidays Finder
 
-API Holidays provides information about holidays worldwide. With this API, users can access data on public holidays, observances, and special events across various countries and regions.
+Holidays Finder provides information about holidays worldwide. Powered by an API, users can access data on public holidays, observances, and special events across various countries and regions.
 
 ![](holifinder.png)
 
